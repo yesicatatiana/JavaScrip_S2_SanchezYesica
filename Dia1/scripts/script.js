@@ -5,8 +5,8 @@
 //¡¡¡Primer comando!!!
 
 //Number
-consoles.log("hola mundo");
-variale1= 3.14;
+console.log("hola mundo");
+variable1 = 3.14;
 console.log(variable1);
 console.log(typeof (variable1));
 
@@ -26,8 +26,8 @@ booleanito2=false;
 console.log(typeof booleanito1);
 
 //Condicionales
-if(boleanito1 == true){
-    consoles.log("Es verdadero!!");
+if(booleanito1 == true){
+    console.log("Es verdadero!!");
 }else{
     console.log("No es verdadero : sadfeis:");
 }
@@ -37,11 +37,7 @@ for(i=0;i<4;i+=i+1){
     console.log("wenas");
 }
 
-holi = true;
-while(holi==true){
-    console.log(wenas);
-    holi=false;
-}
+
 
 
 // Desarrollado por: Yesica Sanchez - c.c: 1.095.304.945
