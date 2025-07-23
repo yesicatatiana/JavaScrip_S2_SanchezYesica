@@ -10,8 +10,9 @@ console.log(typeof edad);
 
 let booleanito = true;
 
-while (booleanito){
-    let opcion = prompt(`
+while (booleanito) {
+    
+    let opcion = parseInt(prompt(`
     =============================================
                   Menu Principal                
     =============================================
@@ -21,9 +22,13 @@ while (booleanito){
     3. Calcular total de gastos
     4. Generar reporte de gastos
     5. Salir
-    =============================================` );
+    =============================================` ));
 
-    if (opcion === 1){
-        
+    if (opcion === 1) {
+        let montoGasto = prompt(`=============================================
+        Registrar 
+
+        `)
     }
 }
+
