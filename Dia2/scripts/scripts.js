@@ -32,12 +32,16 @@
 let booleanito = true
 
 while (booleanito){
-    let stockMenor = prompt(`
+    let consul = prompt(`
     ========= Consultas ===========
     1. Encontrar todos los ingredientes con stock menor a 400
+    2. Encontrar todas las hamburguesas de la categoría “Vegetariana”.
     `
     )
-    if(stockMenor === 1) {
+    if(consul === 1) {
+        alert[ingredientes"stock"]
+    else if (consul === 2)
+        alert[ingredientes""]
 
     }
 }
@@ -98,10 +102,9 @@ let ingredientes = [
 
 
 
-let booleanito = true
 
-while (booleanito){
-    let nombre = prompt(`
+
+    let opcMenuPrincipal = prompt(`
     ==========================
     ======== consulta ========
     ==========================
@@ -110,11 +113,8 @@ while (booleanito){
     3.Precio del ingrediente 
     4.Stock  del ingrediente 
     `)
-    if(nombre === 1) {
-        alert(ingredientes["nombre"1])
-
-
-
+    if(opcMenuPrincipal == 1){
+        for(let i = 0; i < ingredientes.length; i++){
+            alert(ingredientes[i].nombre + ingredientes[i].descripcion)
+        }
     }
-
-}
