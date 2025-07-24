@@ -4,81 +4,6 @@
 
 
 
-
-
-/*  let ingredientes = [
-    {
-        "nombre": "Pan",
-        "descripcion": "Pan de hamburguesa clásico",
-        "precio": 2.5,
-        "stock": 500
-    },
-    {
-        "nombre": "Carne de res",
-        "descripcion": "Carne de res jugosa y sabrosa",
-        "precio": 8,
-        "stock": 300
-    },
-    {
-        "nombre": "Queso cheddar",
-        "descripcion": "Queso cheddar derretido",
-        "precio": 1.5,
-        "stock": 200
-    }
-]
-
-
-
-let booleanito = true
-
-while (booleanito){
-    let consul = prompt(`
-    ========= Consultas ===========
-    1. Encontrar todos los ingredientes con stock menor a 400
-    2. Encontrar todas las hamburguesas de la categoría “Vegetariana”.
-    `
-    )
-    if(consul === 1) {
-        alert[ingredientes"stock"]
-    else if (consul === 2)
-        alert[ingredientes""]
-
-    }
-}
-
-
-
-let inventario = 
-
-while (inventario){
-    let opcion = prompt(`
-    ============
-    `)
-}*/
-
-
-
-
-
-/*let ingredientes [];
-
-
-let inventario = true;
-
-while(inventario){
-    let nombreIngre = prompt(`ingresa el nombre del ingrediente`)
-    let descripcionIngre = prompt (`ingrese la descripcion de los ingredientes`)
-    let precioIngre = prompt(`ingrese el precio del ingrediente`)
-    let stockIngre = prompt(`ingrese el stock del ingrediente`)
-    
-    if (nombreIngre)
-
-
-}
-*/
-
-
-
 let ingredientes = [
     {
         "nombre": "Pan",
@@ -161,6 +86,7 @@ let chef = [
 ]
 
 
+/*
 
 
 
@@ -169,10 +95,7 @@ let chef = [
 
 
 
-
-
-
-booleanito = true
+booleanito = true;
 
 while(booleanito){
     let consulta = parseInt(prompt(`
@@ -184,8 +107,8 @@ while(booleanito){
     3. Consultar hamburguesas
     4. Consultar chefs
     
-    (ingrese el numero de la opcion que desee)
-    `))
+    (ingrese el numero de la opcion que desee consultar)
+    `));
 
     if(consulta === 1){
 
@@ -199,11 +122,15 @@ while(booleanito){
     4. Stock  del ingrediente 
 
     (ingrese el numero de la opcion que desee)
-    `))
+    `));
+    nombreFinal = " -";
     if(opcMenuPrincipal === 1){
         for(let i = 0; i < ingredientes.length; i++){
-            alert(ingredientes[i].nombre)
+            nombreFinal += ` \n${i+1} - ${ingredientes[i].nombre} - ${ingredientes[i].descripcion}-${ingredientes[i].precio}`
+            
         }
+        alert(nombreFinal)
+
     }
     else if(opcMenuPrincipal === 2){
         for(let i = 0; i < ingredientes.length; i++){
@@ -310,4 +237,61 @@ while(booleanito){
 
     } 
 }
+}
+*/
+
+
+
+booleanito = true;
+
+while (booleanito) {
+    let consulta = parseInt(prompt(`
+    =================================
+    === Inventario hamburgueseria ===
+    =================================
+    1. Consultar ingredientes
+    2. Consultar categorias
+    3. Consultar hamburguesas
+    4. Consultar chefs
+    
+    (ingrese el numero de la opcion que desee consultar)
+    `));
+
+if (consulta === 1) {
+
+    let opcMenuPrincipal = parseInt(prompt(`
+    ==========================
+    === info inngredientes ===
+    ==========================
+    1. Listar ingredientes 
+    2. Añadir ingredientes
+    3. Eliminar ingredientes
+    4. Modificar ingredientes
+
+    (ingrese el numero de la opcion que desee)
+    `));
+
+    lisIngredientes = " ";
+    if(opcMenuPrincipal === 1){
+        for(let i = 0; i < ingredientes.length; i++){
+            lisIngredientes += ` \n${i+1}/   ${ingredientes[i].nombre}   -   ${ingredientes[i].descripcion}   -   ${ingredientes[i].precio}`
+            
+        }
+        alert(lisIngredientes)
+    }
+
+    añadirIngredientes = ""
+
+    else if(opcMenuPrincipal === 2){
+        
+        }   
+    }
+
+
+
+
+
+
+}
+
 }
