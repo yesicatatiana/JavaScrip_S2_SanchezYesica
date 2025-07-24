@@ -279,11 +279,25 @@ if (consulta === 1) {
         }
         alert(lisIngredientes)
     }
+    else if (opcMenuPrincipal == 2) {
+        let nombreIng = prompt("Ingresa el nombre del ingrediente")
+        let descripcionIng  = prompt("Igresa una descripción del ingrediente")
+        let precioIng = parseInt(prompt("Ingresa el precio del ingrediente"))
+        let stockIng = parseInt(prompt("Ingresa el stock del ingrediente"))
 
-    añadirIngredientes = ""
+        let nuevoIngrediente = {
+            nombre:nombreIng,
+            descripcion : descripcionIng,
+            precio : precioIng,
+            stock : stockIng
+        }
 
-    else if(opcMenuPrincipal === 2){
-        
+        ingredientes.push(nuevoIngrediente)
+
+        alert(JSON.stringify(ingredientes, null, 2))
+    }
+
+
         }   
     }
 
@@ -292,6 +306,5 @@ if (consulta === 1) {
 
 
 
-}
 
-}
+
