@@ -1,0 +1,53 @@
+body {
+    background-color: black;
+}
+
+.img {
+    width: 30rem;
+    margin-top: 5rem;
+}
+
+.iniciojue {
+    margin-right: 20rem;
+    float: right;
+    margin-top: 10rem;
+    text-align: center;
+}
+
+
+.titulo {
+    color: white;
+    font-size: 3rem;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.inijuego {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 500px;
+    color: #ff008c;
+    text-shadow: none;
+    background: transparent;
+    cursor: pointer;
+    box-shadow: transparent;
+    border: 1px solid #ff008c;
+    transition: 0.5s ease;
+    user-select: none;
+}
+
+.inijuego:hover {
+    color: #ffffff;
+    background: #e62b92;
+    border: 1px solid #e62b92;
+    text-shadow: 
+    0 0 5px #ffffff,
+    0 0 10px #ffffff,
+    0 0 20px #ffffff;
+    box-shadow: 
+    0 0 5px #31072f,
+    0 0 10px #e62b92,
+    0 0 20px #e62b92,
+    0 0 100px #e62b92;
+}
