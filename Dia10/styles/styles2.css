@@ -10,5 +10,93 @@ body {
     border: 2px solid #e62b92;
     border-radius: 20px;
     margin: 30px 90px;
+}
 
+.prt1{
+    margin-top: 2rem;
+}
+
+.prt2 {
+    margin-right: 10rem;
+    float: right;
+}
+
+.prt3 {
+    margin-left: 6rem;
+    float: left;
+}
+
+.img2 {
+    width: 5rem;
+}
+
+.prt4 {
+    margin-top: 4rem
+}
+
+.regresar {
+    float: left;
+    margin-top: -4rem;
+    margin-left: 5rem;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #81802b;
+    text-shadow: none;
+    background: transparent;
+    cursor: pointer;
+    box-shadow: transparent;
+    border: 1px solid #81802b;
+    transition: 0.5s ease;
+}
+
+.regresar:hover {
+    color: #ffffff;
+    background: #9e940b;
+    border: 1px solid #9e940b;
+    text-shadow: 
+    0 0 5px #ffffff,
+    0 0 10px #ffffff,
+    0 0 20px #ffffff;
+    box-shadow: 
+    0 0 5px #756e02,
+    0 0 10px #9e940b,
+    0 0 20px #9e940b,
+    0 0 100px #9e940b;
+}
+
+.comenzar {
+    float: right; /*derecha*/
+    margin-top: -4rem;
+    margin-right: 5rem;
+    padding: 10px 20px;
+    text-transform: uppercase; /*Transforma el texto en mayuscuya*/
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 500; /*controla el grosor del texto - Debe ir sin px ya q es un valor numerico no una longitud*/
+    color: #3668f180;
+    text-shadow: none; /*No se aplicara sombra en el estado normal*/
+    background: transparent;
+    cursor: pointer; /*El cursor cambia a manito cuando se pasa el sobre el boton*/
+    border: 1px solid #3668f180;
+    transition: 0.5s ease; /*ease(rapido al principio y lento al final) */
+}
+
+.comenzar:hover { /*esto se aplica cuando el usiario pasa el mause encima del boton*/
+    color: #ffffff; /*cambia el color de texto a blanco*/
+    background: #008cff;
+    border: 1px solid #008cff;
+    text-shadow: /*Agrega sombras al contorno de un elemento como cajas,botones,tarjeta*/ 
+    /*Sintaxis general*/
+    /*box-shadow: desplazamientoX-desplazamientoY-desenfoque-expansion color*/
+    0 0 5px #ffffff, /*Agrega resplandores blancos al texto(cada linea indica una sombra con diferentes radios de expansion "5px,10px,20px"*/
+    0 0 10px #ffffff, 
+    0 0 20px #ffffff;
+    box-shadow: 
+    0 0 5px #008cff,
+    0 0 10px #008cff,
+    0 0 20px #008cff,
+    0 0 100px #008cff;
 }
